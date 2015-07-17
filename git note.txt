@@ -1,0 +1,17 @@
+本地仓库与远程仓库关联：git remote add origin git@github.com:zhanghu1/(gitStudy.git)
+其中，gitStudy是远程仓库的名字，注意，需要公钥匹配才可以关联:http://blog.csdn.net/lhy_ycu/article/details/20839891
+
+利用远程仓库建立本地仓库：git clone ...
+获取远程仓库的更新：git pull origin <branchname>
+当前分支下使用：git pull即可获取最新的更新
+
+提交更新到本地仓库中：git commit -a "message"
+
+推送本地分支到远程：git push origin newbranch
+
+查看本地分支和远程分支：git branch -a
+
+删除本地分治：git branch -d <branchname>
+删除远程分支: git push origin --delete <branchname>
+
+删除tag：git push origin --delete tag <tagname>
